@@ -6,17 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var i = 0;
-        while (i<10){
-            document.write(i);
-            i++;
-        };
-    
-        var j = 12;
-        do{
-            document.write(j);
-            j++;
-        } while(j<10);
+        var kurslar = {kurs1:"A",kurs2:"B"};
+        for (key in kurslar){
+            document.write(kurslar[key]);
+        }
     </script>
 </head>
 <body>
