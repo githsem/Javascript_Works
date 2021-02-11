@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var uri = "test.html?ad=hüöäns&soyad=muller";
+        var a = encodeURI(uri);
+        document.writeln(a, "<br>");
+
+
+        var x = 10;
+        var y = 20;
+        var c = eval("x+y");
+        document.write(c + "<br>");
+
+
+        var a1 = isFinite("KKK");
+        document.write(a1 + "<br>");
+
+
+        var b1 = parseFloat("10.00");
+        document.write(b1 + "<br>");
+
+        var c1 = String(Date());
+        document.write(c1 + "<br>");
+        document.write(Date() + "<br>");
+    </script>
+</head>
+
+<body> 
+
+</body>
+
+</html>
