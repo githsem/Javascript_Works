@@ -13,11 +13,14 @@
 </head>
 <body>
     <p id = "udemy">Udemy Kurslari</p>
+    <input id="isim" type="text" placeholder="Adinizi Giriniz">
+    <br><br>
     <button id = "islem" onclick="renklendir()">id degistir</button>
 
 <script>
     function renklendir(){
         document.getElementById("udemy").id="Hans";
+        document.getElementById("isim").placeholder="Soyadinizi Giriniz";
     }
 
 </script>
