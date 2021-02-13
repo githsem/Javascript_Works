@@ -15,12 +15,18 @@
     <p id = "udemy">Udemy Kurslari</p>
     <input id="isim" type="text" placeholder="Adinizi Giriniz">
     <br><br>
+    <input id="sec" type="checkbox">Secim Yap
+    <br><br>
     <button id = "islem" onclick="renklendir()">id degistir</button>
+    <button id="secimyap" onclick="isaretle()">isaretle</button>
 
 <script>
     function renklendir(){
         document.getElementById("udemy").id="Hans";
         document.getElementById("isim").placeholder="Soyadinizi Giriniz";
+    }
+    function isaretle(){
+        document.getElementById("sec").checked=true;
     }
 
 </script>
