@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="s1" type="text">1.sayi
+    <br>
+    <input id="s2" type="text">2.sayi
+    <br>
+    <button onclick="sonuc()">Topla</button>
+    <br>
+    <h3 id="yazdir"></h3>
+    <script>
+        function sonuc(){
+            document.getElementById("yazdir").innerHTML = Number(document.getElementById("s1").value) + Number(document.getElementById("s2").value);
+        }
+    </script>
+</body>
+</html>
