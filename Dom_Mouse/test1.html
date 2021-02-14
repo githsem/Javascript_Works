@@ -8,9 +8,16 @@
 </head>
 <body>
     <h1 onclick="degistir(this)">Udemy Kurslari</h1>
+    <br>
+    <button onclick="tarih()">Tarih Saat</button>
+    <br>
+    <h2 id = "yeni"></h2>
     <script>
         function degistir(icerik){
             icerik.innerHTML="Udemy";
+        }
+        function tarih(){
+            document.getElementById('yeni').innerHTML = Date();
         }
     </script>
 </body>
