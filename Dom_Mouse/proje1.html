@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="islem()"></button>
+    <br>
+    <div id="sonuc"></div>
+    <br>
     <input id="s1" type="text">1.sayi
     <br>
     <input id="s2" type="text">2.sayi
@@ -17,6 +21,15 @@
     <script>
         function sonuc(){
             document.getElementById("yazdir").innerHTML = Number(document.getElementById("s1").value) + Number(document.getElementById("s2").value);
+        }
+        function islem(){
+            var e = confirm("Onayliyor musunuz?");
+            if (e == true){
+                document.getElementById("sonuc").innerHTML = " Onay Verildi";
+            }
+            else{
+                document.getElementById("sonuc").innerHTML = " Onay Verilmedi";
+            }
         }
     </script>
 </body>
