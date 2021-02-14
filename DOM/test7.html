@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <ul id="udemy">
         <li>list1</li>
@@ -18,25 +20,32 @@
     <br>
     <button onclick="degistir()">degistir</button>
     <script>
-        function islem(){
+        function islem() {
             var e = document.createElement("p");
             console.log(e);
         }
-        function islem2(){
+
+        function islem2() {
             var list = document.getElementById("udemy");
             list.removeChild(list.childNodes[0]);
         }
-        function islem3(){
+
+        function islem3() {
             var e = document.createElement("li");
             var x = document.createTextNode("Wordpress");
             e.appendChild(x);
             document.getElementById("udemy").appendChild(e);
-        
+
         }
-        function degistir(){
-            
+
+        function degistir() {
+            var t = document.createTextNode("Hans");
+            var ekle = document.getElementById("udemy").childNodes[1];
+            ekle.replaceChild(t, ekle.childNodes[0]);
+
 
         }
     </script>
 </body>
+
 </html>
