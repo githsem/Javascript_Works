@@ -12,7 +12,7 @@
         <li>list2</li>
     </ul>
     <br><br>
-    <button onclick="islem()">Ekle</button>
+    <button onclick="islem3()">Ekle</button>
     <br>
     <button onclick="islem2()">Cikar</button>
     <script>
@@ -23,6 +23,11 @@
         function islem2(){
             var list = document.getElementById("udemy");
             list.removeChild(list.childNodes[0]);
+        }
+        function islem3(){
+            var e = document.createElement("p");
+            var list = document.getElementById("udemy");
+            list.appendChild(list.[0]"list3");
         }
     </script>
 </body>
