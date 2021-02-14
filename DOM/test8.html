@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baslik</title>
 </head>
 
 <body>
@@ -13,8 +13,12 @@
     <h1>Udemy Kurslari</h1>
 
     <button onclick="sec()">Degistir</button>
+    <br>
     <script>
-        document.write(title+"<br>");
+        document.write(document.title+"<br>");
+        document.write(document.domain+"<br>");
+        document.write(document.URL+"<br>");
+
         function sec() {
             document.querySelector("h1").style.backgroundColor = "red";
             document.querySelector("h1").style.color = "white";
