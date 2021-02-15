@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="farkresim.jpg" alt="resim">
+    <img onclick="islem(event)" src="farkresim.jpg" alt="resim">
+    <h3 id="sonuc"></h3>
+
+    <script>
+        function islem(event){
+            var x = event.clientX;
+            var y = event.clientY;
+            var top = "X : "+x+" Y : "+y;
+            document.getElementById("sonuc").innerHTML = top;
+        }
+    </script>
+
 </body>
 </html>
