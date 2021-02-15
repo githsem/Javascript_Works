@@ -5,14 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="sec" onmouseover="geldi(this)" onmouseout="gitti()"> 
+
+    </div>
     <script>
         function yuklendi(){
             console.log("Sayfa Yuklendi");
         }
         window.onload=yuklendi();
+
+        function geldi(para1){
+            para1.innerHTML = "Fare Geldi";
+        }
+        function gitti(){
+            document.getElementById("sec").innerHTML = "Fare Gitti";
+        }
     </script>
 </body>
 </html>
