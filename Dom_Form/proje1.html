@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="ad" onblur="kontrol()" type="text" placeholder="Adiniz">
+    <br>
+    <div id="sonuc"></div>
+    <input type="text" placeholder="Soyadiniz">
+    <script>
+        function kontrol(){
+            var e = document.getElementById("ad").value;
+            var say = e.length;
+            if (say<6){
+                document.getElementById("sonuc").innerHTML = "Adiniz 6 karakterden kisa olamaz..."
+            }
+        }
+    </script>
+</body>
+</html>
