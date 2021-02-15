@@ -13,6 +13,9 @@
     <br>
     <button onmousedown="islem2()">Tikla</button>
     <div id="sonuc"></div>
+    
+    <button onclick="islem3()">Kac Kere Tiklandi</button>
+    <div id="sonuc3"></div>
     <script>
         function islem(event) {
             if (event.ctrlKey) {
@@ -25,7 +28,10 @@
 
         }
         function islem2(){
-            document.getElementById("sonuc").innerHTML = "Tikladiginiz Tus : "+event.button;
+            document.getElementById("sonuc").innerHTML = "Tikladiginiz Tus : "+event.buttons;
+        }
+        function islem3(){
+            document.getElementById("sonuc3").innerHTML = "Tikladiginiz Tus : "+event.detail;
         }
     </script>
 </body>
