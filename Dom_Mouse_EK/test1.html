@@ -10,6 +10,9 @@
 
 <body>
     <button onmousedown="islem(event)">Tikla</button>
+    <br>
+    <button onmousedown="islem2()">Tikla</button>
+    <div id="sonuc"></div>
     <script>
         function islem(event) {
             if (event.ctrlKey) {
@@ -20,6 +23,9 @@
                 alert("SHIFT Tusu Basildi");
             }
 
+        }
+        function islem2(){
+            document.getElementById("sonuc").innerHTML = "Tikladiginiz Tus : "+event.button;
         }
     </script>
 </body>
