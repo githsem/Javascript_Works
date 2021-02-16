@@ -9,12 +9,21 @@
 <body>
     <button onclick="islem()">Tikla</button>
     <h3 id="sonuc"></h3>
+    <hr>
+    <button onclick="islem2()">Tikla</button>
+    <h3 id="sonuc2"></h3>
     <script>
         function islem(){
             var w = window.innerWidth;
             var h = window.innerHeight;
 
             document.getElementById("sonuc").innerHTML = "Oranlar "+w+" - "+h; 
+        }
+        function islem2(){
+            var w = window.outerWidth;
+            var h = window.outerHeight;
+
+            document.getElementById("sonuc2").innerHTML = "Oranlar "+w+" - "+h; 
         }
     </script>
 </body>
