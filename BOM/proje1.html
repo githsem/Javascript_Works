@@ -15,12 +15,12 @@
     <script>
         var yeni;
         function ac(){
-            yeni = window.open("","yeni pencere","width=250px","height=100px");
+            yeni = window.open("","Yeni Pencere","width=250px","height=100px");
         }
         function kapat(){
             if(yeni){
                 yeni.close();
-                document.getElementById("sonuc").innerHTML = "Pencere Kapatildi";
+                document.getElementById("sonuc").innerHTML =yeni.name+ " Kapatildi";
             }
             else{
                 document.getElementById("sonuc").innerHTML = "Acik Pencere Yok";
