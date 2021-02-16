@@ -12,7 +12,10 @@
     <input type="text" name="" id="sayi1">+
     <input type="text" name="" id="sayi2">
     <button onclick="islem2()">Topla</button>
+    <br>
+    <button onclick="islem3()">Kapat</button>
     <script>
+        var yeni;
         function islem(){
            var yeni = window.open("","yeni pencere","width=250px","height=100px");
            yeni.document.write("<h1>Yeni Pencere Acildi</h1>");
@@ -20,9 +23,12 @@
         function islem2(){
             var x = document.getElementById("sayi1").value;
             var y = document.getElementById("sayi2").value;
-            var yeni = window.open("","yeni pencere","width=250px","height=100px");
+            yeni = window.open("","yeni pencere","width=250px","height=100px");
             toplam =Number(x)+Number(y);
             yeni.document.write("Toplam : "+toplam);
+        }
+        function islem3(){
+            yeni.close();
         }
     </script>
 </body>
