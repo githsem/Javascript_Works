@@ -19,6 +19,7 @@
         }
         function kapat(){
             if(yeni){
+                yeni.close();
                 document.getElementById("sonuc").innerHTML = "Pencere Kapatildi";
             }
             else{
