@@ -12,12 +12,21 @@
     <hr>
     <input id="sec2" onselect="islem2(this)" type="search" name="" id="">
     <div id="sonuc2"></div>
+    <hr>
+    <form onsubmit="islem3()">
+        <input type="search">
+        <input type="submit" value="gonder" >
+    </form>
+    <div id="sonuc3"></div>
     <script>
         function islem(x){
             document.getElementById("sonuc").innerHTML = x.value;
         }
         function islem2(y){
             document.getElementById("sonuc2").innerHTML = y.value;
+        }
+        function islem3(){
+            document.getElementById("sonuc3").innerHTML = "Basariyla Gonderildi...";
         }
     </script>
 </body>
