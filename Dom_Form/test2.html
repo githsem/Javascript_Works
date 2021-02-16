@@ -7,11 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <input onfocus="islem(this)" type="text" placeholder="Bir tusa basiniz" name="" id="">
+    <input onfocus="islem(this)" type="text" placeholder="Bir tusa basiniz">
+    <br>
+    <input onfocusin="islem2(this)" onfocusout="islem3(this)" type="text" placeholder="Bir tusa basiniz">
+    <br>
+    
+
 
     <script>
         function islem(x){
             x.style.background = "yellow";
+        }
+        function islem2(x){
+            x.style.background = "yellow";
+        }
+        function islem3(x){
+            x.style.background = "red";
         }
     </script>
 </body>
