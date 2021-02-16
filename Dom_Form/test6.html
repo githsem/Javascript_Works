@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="sec" onsearch="islem(this)" type="search" name="" id="">
+    <div id="sonuc"></div>
+    <hr>
+    <input id="sec2" onselect="islem2(this)" type="search" name="" id="">
+    <div id="sonuc2"></div>
+    <script>
+        function islem(x){
+            document.getElementById("sonuc").innerHTML = x.value;
+        }
+        function islem2(y){
+            document.getElementById("sonuc2").innerHTML = y.value;
+        }
+    </script>
+</body>
+</html>
