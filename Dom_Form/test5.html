@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onreset="islem()">
+    <input type="text" placeholder="Giriniz..">
+    <br>
+    <button type="submit">gonder</button>
+    <br>
+    <button type="reset">reset</button>
+    <br>
+    
+    </form>
+    <h3 id="sonuc"></h3>
+
+    <script>
+        function islem(){
+            document.getElementById("sonuc").innerHTML = "Form Temizlendi.."
+        }
+    </script>
+</body>
+</html>
