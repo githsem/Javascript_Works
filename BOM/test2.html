@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="islem()">Tikla</button>
+    <h3 id="sonuc"></h3>
+    <script>
+        function islem(){
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+
+            document.getElementById("sonuc").innerHTML = "Oranlar "+w+" - "+h; 
+        }
+    </script>
+</body>
+</html>
