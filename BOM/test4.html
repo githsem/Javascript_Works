@@ -10,6 +10,8 @@
     <button onclick="islem()">Session Olstur</button>
     <br>
     <button onclick="islem2()">Session Oku ve Yaz</button>
+    <br>
+    <button onclick="sil()">Session Sil</button>
     <h3 id="sonuc"></h3>
 
     <script>
@@ -18,6 +20,10 @@
         }
         function islem2(){
             document.getElementById("sonuc").innerHTML = sessionStorage.getItem("ad");
+        }
+        function sil(){
+            sessionStorage.removeItem("ad");
+            document.getElementById("sonuc").innerHTML = " ";
         }
     </script>
 </body>
