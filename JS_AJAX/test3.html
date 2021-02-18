@@ -12,8 +12,9 @@
     <script>
         var xhttp = new XMLHttpRequest();
         console.log(xhttp);
-        xhttp.open("GET","veri.php",true);
-        xhttp.send();
+        xhttp.open("POST","veri.php",true);
+        xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhttp.send("ad=Hans&soyad=yuksel");
 
         xhttp.onreadystatechange = function(){
             if (this.readyState==4 && this.status==200){
