@@ -1,5 +1,10 @@
-var links = document.getElementsByTagName('a');
+function getAverage(a,b){
+    var average = (a+b)/2;
+    console.log(average);
+}
+getAverage(6,8);
 
-for(i=0;i<links.length;i++){
-    links[i].className = 'link-' + i
+var c = 'aa';
+if(isNaN(c)){
+    document.write('hhh');
 }
